@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/morteza
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mortza.github.io
+  * I am morteza (https://keybase.io/morteza) on keybase.
+  * I have a public key with fingerprint D3AD 24E5 DDD4 7080 4909  1700 5AD0 F39A 7D45 403D
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101646026e8896115d5a8437e7383cf2e1866fdc011317e65ff943dca09e3385aed0a",
+      "fingerprint": "d3ad24e5ddd47080490917005ad0f39a7d45403d",
+      "host": "keybase.io",
+      "key_id": "5ad0f39a7d45403d",
+      "kid": "0101646026e8896115d5a8437e7383cf2e1866fdc011317e65ff943dca09e3385aed0a",
+      "uid": "c4bdef1a55e05ca549b626a2eec2ea19",
+      "username": "morteza"
+    },
+    "service": {
+      "hostname": "mortza.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1504160437,
+  "expire_in": 157680000,
+  "prev": "057c8dfa9ff6d59a738e09ecd7fb5e50a30767a24cf6372db3a587d7b7ef9cf9",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMIqAnicrVJbSBVBGD6nKx26cQgz7MYmkmUyc3ZnZ/dYdqGLIRRSBppymt2ZPa6X
+s6fd9ZJm9FJEERWVhFrRBSrtQtShCIyy0lCoLHrwoaCofEjMUMiHbrNW0EOPzcsw
+/3zfN9/3MQ+njPUF/IXPhhrr16xY5u++31jpK7jQkqgTNIvuEMJ1Qhkb3Vg5ZY4b
+KTOpEBYABFCWZBCSmaKoMoSIIqJIImZYVETdCDGoyLJBdQChCDGTkWGokkh1AlQm
+igoijAIiZAiGGYsyO26bMZfLUpHQkMQQpVTCQAGSClSIAUCEAkNUCaYSkoBIObHE
+cjwGN6cRh2WaFp/xQ2TU3j/w/9l35aicLmmUGZAgxADSCZJUTQ7JJMSYHmIEqh7Q
+YXaMVDCOrrBsl9USoT5D4MMqU2der16QvwC1JDNquiWV2q9IcdtyLd0q57clrht3
+wh7b3RH34NVMi/wWimhmjPIqOaOK2Y5pxYQw5EjdNT1liIAEZcBzZgisJm7aLGJ6
+CIRlBfDlvcOqvH4Q1hVqENUwZIp4gaLCeHKdYkNDDAEiAixjEpJ0QxZxiGoiQQqm
+WMPMUHXDC+yw7TFLCEvcJolySceMxohbaTOhvv1e0TifP+CbMH6M98V8gUnT/3y8
++oaJP/LXHdyWEysd8fUtaXegLzuKP+6cfbXgSdOlotZA18q2LdW7rOz0T3n++TN7
+lbbu8GZ3MVTdlr1vuhMN6xv6DpYWOy/3TXs/60hw7jUaeHs8eicMp/XXnBWGxp55
+tEc938VWr+qtTstFh4dnfP0+NzGobFgePi30F/foKdOfHgleXPs5a+neyUHtQ3pd
+xdmU1pJjnfjd3QOX+5oeZxWcahXnnUhdMFj+beGXwe3NxbdWo+HUb62v4i/aTLow
+/8btOdVlQ+UDJyc31xwjhS25iZGB5kNbN92aM3gunlYzNWXjgzEduxvzZl7Xk3Nu
+H30ejHS8TkrakGwvutJTeDq98/j+/Td/AsB0P0Q=
+=VD/e
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/morteza
+
+==================================================================
+
