@@ -6,20 +6,28 @@ I hereby claim:
 
   * I am an admin of https://mortza.github.io
   * I am morteza (https://keybase.io/morteza) on keybase.
-  * I have a public key with fingerprint D3AD 24E5 DDD4 7080 4909  1700 5AD0 F39A 7D45 403D
+  * I have a public key ASCJx24Y7_Whb2Ow-BKyPw7fDm6DdjcyvZA1uXCgd9gggAo
 
 To do so, I am signing this object:
 
 {
   "body": {
     "key": {
-      "eldest_kid": "0101646026e8896115d5a8437e7383cf2e1866fdc011317e65ff943dca09e3385aed0a",
-      "fingerprint": "d3ad24e5ddd47080490917005ad0f39a7d45403d",
+      "eldest_kid": "012089c76e18eff5a16f63b0f812b23f0edf0e6e83763732bd9035b970a
+077d820800a",
       "host": "keybase.io",
-      "key_id": "5ad0f39a7d45403d",
-      "kid": "0101646026e8896115d5a8437e7383cf2e1866fdc011317e65ff943dca09e3385aed0a",
+      "kid": "012089c76e18eff5a16f63b0f812b23f0edf0e6e83763732bd9035b970a077d820
+800a",
       "uid": "c4bdef1a55e05ca549b626a2eec2ea19",
       "username": "morteza"
+    },
+    "merkle_root": {
+      "ctime": 1524387905,
+      "hash": "5d9d9530f33cdfc561268673fabecc2ca8930ffd058fc9120495289bba6314d73
+626e2c55c07485dd7240b5548530c40363a3501a7b75cd8b3899144e0435a9d",
+      "hash_meta": "0c5d257b72727f8fd4f9805c6ad21da56f91456e97c7dcfd541ad5a8b0cf
+4884",
+      "seqno": 2425415
     },
     "service": {
       "hostname": "mortza.github.io",
@@ -28,37 +36,37 @@ To do so, I am signing this object:
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1504160437,
-  "expire_in": 157680000,
-  "prev": "057c8dfa9ff6d59a738e09ecd7fb5e50a30767a24cf6372db3a587d7b7ef9cf9",
-  "seqno": 4,
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.45"
+  },
+  "ctime": 1524387937,
+  "expire_in": 504576000,
+  "prev": "ce54e60a28629c7a25c469e98f33bac7590c6ca4d6a54f68828bbf6e50450f3a",
+  "seqno": 23,
   "tag": "signature"
 }
 
 which yields the signature:
 
------BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.73
-Comment: https://keybase.io/crypto
-
-yMIqAnicrVJbSBVBGD6nKx26cQgz7MYmkmUyc3ZnZ/dYdqGLIRRSBppymt2ZPa6X
-s6fd9ZJm9FJEERWVhFrRBSrtQtShCIyy0lCoLHrwoaCofEjMUMiHbrNW0EOPzcsw
-/3zfN9/3MQ+njPUF/IXPhhrr16xY5u++31jpK7jQkqgTNIvuEMJ1Qhkb3Vg5ZY4b
-KTOpEBYABFCWZBCSmaKoMoSIIqJIImZYVETdCDGoyLJBdQChCDGTkWGokkh1AlQm
-igoijAIiZAiGGYsyO26bMZfLUpHQkMQQpVTCQAGSClSIAUCEAkNUCaYSkoBIObHE
-cjwGN6cRh2WaFp/xQ2TU3j/w/9l35aicLmmUGZAgxADSCZJUTQ7JJMSYHmIEqh7Q
-YXaMVDCOrrBsl9USoT5D4MMqU2der16QvwC1JDNquiWV2q9IcdtyLd0q57clrht3
-wh7b3RH34NVMi/wWimhmjPIqOaOK2Y5pxYQw5EjdNT1liIAEZcBzZgisJm7aLGJ6
-CIRlBfDlvcOqvH4Q1hVqENUwZIp4gaLCeHKdYkNDDAEiAixjEpJ0QxZxiGoiQQqm
-WMPMUHXDC+yw7TFLCEvcJolySceMxohbaTOhvv1e0TifP+CbMH6M98V8gUnT/3y8
-+oaJP/LXHdyWEysd8fUtaXegLzuKP+6cfbXgSdOlotZA18q2LdW7rOz0T3n++TN7
-lbbu8GZ3MVTdlr1vuhMN6xv6DpYWOy/3TXs/60hw7jUaeHs8eicMp/XXnBWGxp55
-tEc938VWr+qtTstFh4dnfP0+NzGobFgePi30F/foKdOfHgleXPs5a+neyUHtQ3pd
-xdmU1pJjnfjd3QOX+5oeZxWcahXnnUhdMFj+beGXwe3NxbdWo+HUb62v4i/aTLow
-/8btOdVlQ+UDJyc31xwjhS25iZGB5kNbN92aM3gunlYzNWXjgzEduxvzZl7Xk3Nu
-H30ejHS8TkrakGwvutJTeDq98/j+/Td/AsB0P0Q=
-=VD/e
------END PGP MESSAGE-----
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgicduGO/1oW9jsPgSsj8O3w5ug3Y3Mr2Q
+NblwoHfYIIAKp3BheWxvYWTFA0h7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwODljNzZl
+MThlZmY1YTE2ZjYzYjBmODEyYjIzZjBlZGYwZTZlODM3NjM3MzJiZDkwMzViOTcwYTA3N2Q4MjA4MDBh
+IiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwODljNzZlMThlZmY1YTE2ZjYzYjBmODEyYjIz
+ZjBlZGYwZTZlODM3NjM3MzJiZDkwMzViOTcwYTA3N2Q4MjA4MDBhIiwidWlkIjoiYzRiZGVmMWE1NWUw
+NWNhNTQ5YjYyNmEyZWVjMmVhMTkiLCJ1c2VybmFtZSI6Im1vcnRlemEifSwibWVya2xlX3Jvb3QiOnsi
+Y3RpbWUiOjE1MjQzODc5MDUsImhhc2giOiI1ZDlkOTUzMGYzM2NkZmM1NjEyNjg2NzNmYWJlY2MyY2E4
+OTMwZmZkMDU4ZmM5MTIwNDk1Mjg5YmJhNjMxNGQ3MzYyNmUyYzU1YzA3NDg1ZGQ3MjQwYjU1NDg1MzBj
+NDAzNjNhMzUwMWE3Yjc1Y2Q4YjM4OTkxNDRlMDQzNWE5ZCIsImhhc2hfbWV0YSI6IjBjNWQyNTdiNzI3
+MjdmOGZkNGY5ODA1YzZhZDIxZGE1NmY5MTQ1NmU5N2M3ZGNmZDU0MWFkNWE4YjBjZjQ4ODQiLCJzZXFu
+byI6MjQyNTQxNX0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJtb3J0emEuZ2l0aHViLmlvIiwicHJvdG9j
+b2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xp
+ZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuNDUifSwiY3Rp
+bWUiOjE1MjQzODc5MzcsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiY2U1NGU2MGEyODYyOWM3
+YTI1YzQ2OWU5OGYzM2JhYzc1OTBjNmNhNGQ2YTU0ZjY4ODI4YmJmNmU1MDQ1MGYzYSIsInNlcW5vIjoy
+MywidGFnIjoic2lnbmF0dXJlIn2jc2lnxED4h0Hmj9MYfHMgEpJAmVBF2xYx1n87GJe/qPQgLdhJquoD
+7knYqTPIQE7XGdOo9SHSO0YXRGDRSEVUoOCY57oCqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg
+B+TXhFQRVyTKj0z4M8AKjq2i6+BgZsvV3H7jrs+YnGKjdGFnzQICp3ZlcnNpb24B
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
@@ -66,4 +74,3 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/morteza
 
 ==================================================================
-
