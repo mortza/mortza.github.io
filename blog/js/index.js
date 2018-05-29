@@ -7,7 +7,7 @@
     blog.title = "AngularJS Blog App";
 
     blog.posts = {};
-    $http.get('http://127.0.0.1:8000/posts/').success(function(data) {
+    $http.get('http://http://morteza94.pythonanywhere.com/posts/').success(function(data) {
       blog.posts = data;
     });
 
