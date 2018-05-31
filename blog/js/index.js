@@ -1,21 +1,30 @@
 (function() {
   var app = angular.module('blogApp', []);
 
-  app.controller('BlogController', ['$http', function($http) {
-
+  app.directive('repeatDone', function() {
+    return function(scope, element, attrs) {
+        if (scope.$last) {
+          // runIsotope();
+          setUpFilter();
+        }
+    }
+  });
+  app.controller('BlogController', ['$scope', '$http', function($scope, $http) {
+    $scope.getRandomSpan = function() {
+      return Math.floor((Math.random() * 100) + 1);
+    };
     var blog = this;
     blog.title = "AngularJS Blog App";
 
     blog.posts = {};
-    $http.get('http://127.0.0.1:8000/posts/').success(function(data) {
-      blog.posts = data;
+    $http.get('https://morteza94.pythonanywhere.com/posts/').success(function(data) {
+      blog.posts = data
     });
-
+    blog.colors = ['red', 'orange', 'yellow', 'olive', 'green', 'teal', 'blue', 'violet', 'purple', 'pink'];
     blog.tab = 'blog';
 
     blog.selectTab = function(setTab) {
       blog.tab = setTab;
-      console.log(blog.tab)
     };
 
     blog.isSelected = function(checkTab) {
