@@ -18,7 +18,7 @@
 
     blog.posts = {};
     $http.get('https://morteza94.pythonanywhere.com/posts/').success(function(data) {
-      blog.posts = data
+      blog.posts = data;
     });
     blog.colors = ['red', 'orange', 'yellow', 'olive', 'green', 'teal', 'blue', 'violet', 'purple', 'pink'];
     blog.tab = 'blog';
