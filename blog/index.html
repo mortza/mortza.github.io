@@ -2,14 +2,10 @@
 <html lang="fa" >
     <head>
         <meta charset="UTF-8">
-        <title>AngularJS Blog App</title>
+        <title>My Blog</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/semantic.rtl.min.css">
         <link rel="stylesheet" href="css/rtl.css">
-
-        <script src="js/angular.min.js"></script>
-        <script src="js/angular-animate.js"></script>
-        <script src="js/index.js"></script>
     </head>
     <body ng-app="blogApp">
         <div ng-controller="BlogController as blog" class="ui container">
@@ -33,7 +29,7 @@
 
             <div class="ui four column doubling stackable grid" ng-show="blog.isSelected('blog')" style="padding-top:30px;">
                 <!-- list posts -->
-                <div ng-show="!show_index_loader" ng-repeat="post in posts | filter:post_filter as results track by post.tags " class="column animate-repeat">
+                <div ng-show="!show_index_loader" ng-repeat="post in posts" class="column animate-repeat">
                     <div class=" filter-item ui fluid {{ blog.colors[$index % 9] }} card">
                         <div class="content" ng-click="blog.selectTab($index)">
                             <div class="header">{{ post.title }}</div>
@@ -48,7 +44,7 @@
                             <i class="comment outline icon"></i>
                             0
                             <div class="ui divider"></div>
-                            <a ng-repeat="tag in post.tags" class="ui {{ blog.colors[$index % 9] }} label">
+                            <a ng-repeat="tag in post.tags" class="ui {{ blog.colors[$index % 4] }} label">
                                 {{ tag }}
                             </a>
                         </div>
@@ -77,7 +73,13 @@
                 </div>
             </div>
         </div> <!-- first div -->
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-animate.js"></script>
+        <script src="js/index.js"></script>
         <script src="js/jquery.min.js"></script>
         <script scr="js/semantic.min.js"></script>
+        <script>
+            $('.ui.dropdown').dropdown();
+        </script>
     </body>
 </html>

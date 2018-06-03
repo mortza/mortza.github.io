@@ -1,8 +1,3 @@
-/**
- * @license AngularJS v1.6.10
- * (c) 2010-2018 Google, Inc. http://angularjs.org
- * License: MIT
- */
 (function(window, angular) {'use strict';
 
 var ELEMENT_NODE = 1;

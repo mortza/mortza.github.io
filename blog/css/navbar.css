@@ -1,9 +1,0 @@
-.hidden{
-    display: none !important;
-}
-.menu {
-    -webkit-transition: all 0.25s cubic-bezier(1, -0.49, 1, 1);
-    -moz-transition: all 0.25s cubic-bezier(1, -0.49, 1, 1);
-    -o-transition: all 0.25s cubic-bezier(1, -0.49, 1, 1);
-    transition: all 0.25s cubic-bezier(1, -0.49, 1, 1);
-}
