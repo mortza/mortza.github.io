@@ -1,25 +1,17 @@
-(function() {
-  var app = angular.module('blogApp', []);
+(function(angular) {
+  var app = angular.module('blogApp', ['ngAnimate']);
 
-  app.directive('repeatDone', function() {
-    return function(scope, element, attrs) {
-        if (scope.$last) {
-          // runIsotope();
-          setUpFilter();
-        }
-    }
-  });
   app.controller('BlogController', ['$scope', '$http', function($scope, $http) {
-    $scope.getRandomSpan = function() {
-      return Math.floor((Math.random() * 100) + 1);
-    };
     var blog = this;
+    $scope.show_index_loader = true;
     blog.title = "AngularJS Blog App";
 
     blog.posts = {};
-    $http.get('https://morteza94.pythonanywhere.com/posts/').success(function(data) {
-      blog.posts = data;
-    });
+    $http.get('http://127.0.0.1:8000/posts/').then(function(response) {
+      $scope.posts = response.data;
+      $scope.show_index_loader = false;
+    }, function(error) {});
+    // console.log(blog.posts);
     blog.colors = ['red', 'orange', 'yellow', 'olive', 'green', 'teal', 'blue', 'violet', 'purple', 'pink'];
     blog.tab = 'blog';
 
@@ -52,4 +44,4 @@
     };
   });
 
-})();
+})(window.angular);

@@ -6,78 +6,78 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/semantic.rtl.min.css">
         <link rel="stylesheet" href="css/rtl.css">
+
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-animate.js"></script>
+        <script src="js/index.js"></script>
     </head>
-    <body>
-        <body ng-app="blogApp">
-            <div ng-controller="BlogController as blog" class="ui container">
-                <div class="ui red inverted massive menu">
+    <body ng-app="blogApp">
+        <div ng-controller="BlogController as blog" class="ui container">
+            <div class="ui red inverted massive menu">
+                <div class="item">
+                    <i class="terminal icon"></i>
+                </div>
+                <a href="#" class="active item" ng-show="!blog.isSelected('blog')" ng-click="blog.selectTab('blog')">
+                    <i class="small chevron left icon"></i>
+                    بازگشت
+                </a>
+                <div class="right menu" ng-show="blog.isSelected('blog')">
                     <div class="item">
-                        <i class="terminal icon"></i>
-                    </div>
-                    <a href="#" class="active item" ng-show="!blog.isSelected('blog')" ng-click="blog.selectTab('blog')">
-                        <i class="small chevron left icon"></i>
-                        بازگشت
-                    </a>
-                    <div class="right menu" ng-show="blog.isSelected('blog')">
-                        <div class="item">
-                            <div class="ui mini inverted transparent icon input">
-                                <input type="text" placeholder="جست و جوی تگ‌ها...">
-                                <i class="search link icon" onclick="soo()"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ui buttons">
-                   <button class="ui button" data-filter="all"> All </button>
-                   <button class="ui button" data-filter="red"> Red </button>
-                   <button class="ui button" data-filter="orange"> Orange </button>
-                   <button class="ui button" data-filter="yellow"> Yellow </button>
-                </div>
-                <div class="ui four column doubling stackable grid" ng-show="blog.isSelected('blog')" style="padding-top:30px;">
-                    <!-- list posts -->
-                    <div  ng-repeat="post in blog.posts" class="column" repeat-done>
-                        <div data-category="{{ blog.colors[$index % 3] }}" class=" filter-item ui fluid {{ blog.colors[$index % 9] }} card">
-                            <div class="content" ng-click="blog.selectTab($index)">
-                                <div class="header">{{ post.title }}</div>
-                                <div class="meta">{{ post.created_at | date : 'fullDate' }}</div>
-                                <div class="description">
-                                    <p>
-                                        {{ post.body | limitTo: post.disp_length }}...
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="extra content">
-                                <i class="comment outline icon"></i>
-                                0
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    <!-- end list posts -->
-                    <!-- show specific post -->
-                    <div class="post" ng-repeat="post in blog.posts" ng-show="blog.isSelected($index)" style="padding-top:30px;">
-                        <div>
-                            <h2>{{post.title}}</h2>
-                            <cite>on {{post.created_at | date}}</cite>
-                            <div class="post-body">
-                                <p>
-                                    {{post.body}}
-                                </p>
-                            </div>
+                        <div class="ui mini inverted transparent icon input">
+                            <input type="text" ng-model="post_filter" placeholder="جست و جوی تگ‌ها...">
+                            <i class="search link icon"></i>
                         </div>
                     </div>
                 </div>
             </div>
-        </body>
-        <script src="js/angular.min.js"></script>
-        <script src="js/angular-animate.js"></script>
+
+            <div class="ui four column doubling stackable grid" ng-show="blog.isSelected('blog')" style="padding-top:30px;">
+                <!-- list posts -->
+                <div ng-show="!show_index_loader" ng-repeat="post in posts | filter:post_filter as results track by post.tags " class="column animate-repeat">
+                    <div class=" filter-item ui fluid {{ blog.colors[$index % 9] }} card">
+                        <div class="content" ng-click="blog.selectTab($index)">
+                            <div class="header">{{ post.title }}</div>
+                            <div class="meta">{{ post.created_at | date : 'fullDate' }}</div>
+                            <div class="description">
+                                <p>
+                                    {{ post.body | limitTo: post.disp_length }}...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <i class="comment outline icon"></i>
+                            0
+                            <div class="ui divider"></div>
+                            <a ng-repeat="tag in post.tags" class="ui {{ blog.colors[$index % 9] }} label">
+                                {{ tag }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end list posts -->
+            <div ng-if="show_index_loader" class="ui center aligned relaxed grid">
+                <div class="ui">
+                    <div class="ui active inverted dimmer">
+                        <div class="ui massive text loader">Loading</div>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+            <!-- show specific post -->
+            <div class="post" ng-repeat="post in posts" ng-show="blog.isSelected($index)" style="padding-top:30px;">
+                <div>
+                    <h2>{{post.title}}</h2>
+                    <cite>on {{post.created_at | date}}</cite>
+                    <div class="post-body">
+                        <p>
+                            {{post.body}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- first div -->
         <script src="js/jquery.min.js"></script>
         <script scr="js/semantic.min.js"></script>
-        <script src="js/index.js"></script>
-        <script src="js/jquery.filterizr.min.js"></script>
-        <script type="text/javascript">
-            function setUpFilter(){
-            }
-        </script>
     </body>
 </html>
